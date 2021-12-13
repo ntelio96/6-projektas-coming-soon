@@ -1,8 +1,19 @@
-.container{
+.container {
     display: inline-block;
     width: 100%;
     padding-top: 60px;  
     padding-bottom: 60px;
+}
+
+.container > .left {
+    width: 50%; 
+    margin-right: 10%;
+    float: left;
+}
+
+.container > .right {
+    width: 40%;
+    float: left;
 }
 
 .container > .row {
@@ -22,6 +33,17 @@
         display: inline-block;
         width: 600px;
         margin-left: calc(50% - 300px);
+
+    }
+    .container > .left {
+        width: 50%; 
+        margin-right: 10%;
+        float: left;
+
+    }
+    .container > .right {
+        width: 40%;
+        float: left;
     }
 }
 
@@ -32,6 +54,15 @@
         width: 400px;
         margin-left: calc(50% - 200px);
     }
+    .container > .left {
+        width:100%;
+        margin-right: 0;
+        margin-bottom: 60px;
+     }
+    .container > .right {
+        width: 100%;
+    }
+    
 }
 
 @media (max-width: 460px) {

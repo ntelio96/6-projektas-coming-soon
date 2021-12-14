@@ -1,3 +1,25 @@
+/* base */
+@import '../base/layout.css';
+@import '../base/variable.css';
+@import '../base/reset.css';
+
+/* 3rd party 
+eg. bootstrap*/
+
+/* components */
+
+@import '../components/button.css';
+@import '../components/clock.css';
+@import '../components/form.css';
+@import '../components/mouse.css';
+@import '../components/progress.bar.css';
+
+/* custom style bellow this comment, for this page */
+
+
+
+
+
 .container {
     display: inline-block;
     width: 100%;

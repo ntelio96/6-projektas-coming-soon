@@ -1,0 +1,38 @@
+.clock {
+    display: inline-block;
+    width: 100%;
+    
+}
+
+.clock > .time {
+   float: left;
+    width: 25%;
+    color: #fff;
+    margin: 15px 0;
+}
+.clock > .time > .value {
+   display: inline-block;
+   width: 100%;
+   font-size: 50px;
+   font-weight: bold;
+   font-family: cursive;
+   
+}
+
+.clock >.time > .title {
+    display: inline-block;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+@media (max-width: 480px) {
+    .clock > .time {
+        float: left;
+         width: 50%;
+         color: #fff;
+    }
+    .clock > .time:nth-child(1)
+    .clock > .time:nth-child(2) {
+        margin-bottom: 30px;
+    }
+}

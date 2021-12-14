@@ -1,26 +1,76 @@
-/* base */
-@import '../base/layout.css';
-@import '../base/variable.css';
-@import '../base/reset.css';
-
-/* 3rd party 
-eg. bootstrap*/
-
-/* components */
-
-@import '../components/button.css';
-@import '../components/clock.css';
-@import '../components/form.css';
-@import '../components/mouse.css';
-@import '../components/progress.bar.css';
-
-/* custom style bellow this comment, for this page */
-
-
-
 
 
 .container {
+    display: inline-block;
+    width: 100%;
+    padding: 60px 0;
+}
+
+.container > .row {
+    display: inline-block;
+    width: 800px;
+    margin: 0 calc(50% - 400px);
+}
+
+.container > .row-short {
+    display: inline-block;
+    width: 600px;
+    margin: 0 calc(50% - 300px);
+}
+
+.container .left {
+    float: left;
+    width: 50%;
+    margin-right: 10%;
+}
+
+.container .right {
+    float: left;
+    width: 40%;
+}
+
+@media (max-width: 900px) {
+    .container > .row {
+        width: 600px;
+        margin: 0 calc(50% - 300px);
+    }
+}
+
+@media (max-width: 700px) {
+    .container > .row-short,
+    .container > .row {
+        width: 400px;
+        margin: 0 calc(50% - 200px);
+    }
+
+    .container .left {
+        width: 100%;
+        margin: 0 0 60px;
+    }
+
+    .container .right {
+        width: 100%;
+    }
+}
+
+@media (max-width: 460px) {
+    .container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .container > .row-short,
+    .container > .row {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+
+
+
+
+
+/* .container {
     display: inline-block;
     width: 100%;
     padding-top: 60px;  
@@ -91,8 +141,8 @@ eg. bootstrap*/
     .container {
         display: inline-block;
         width: 100%;
-        padding-top: 60px;  
-        padding-bottom: 60px;
+        padding: 60px 0px;  
+        
     }
     .container > .row , .container > .row-short {
         display: inline-block;
@@ -100,4 +150,4 @@ eg. bootstrap*/
         margin-left: 0;
     }
 }
-
+ */

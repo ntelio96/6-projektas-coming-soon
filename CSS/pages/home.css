@@ -50,6 +50,12 @@ eg. bootstrap*/
 }
 .hero .form {
     padding-bottom: 15px;
+    width: 90%;
+    margin: 0 5% 15px;
+}
+.hero .form > input::placeholder {
+    color: #fff;
+    border-color: #fff;
 }
 
 /* HERO: end*/
@@ -82,10 +88,13 @@ margin-bottom: 20px;
 .content-description > .link:hover{
     text-decoration: underline;
 }
-
-
-.progress-bar {
-   
+@media (min-width: 900px) {
+main .form > input.input {
+    width: calc(50% - 10px);
+}
+.form > input:last-of-type {
+    float: right;
+    }
 }
 
 

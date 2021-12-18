@@ -98,10 +98,10 @@ eg. bootstrap*/
 
 footer.container {
   padding-top: 0;
+  text-align: center;
 }
 .socials {
   padding: 15px 0;
-  text-align: center;
   border-bottom: 2px solid #fff;
 }
 .social > .fa {

@@ -15,4 +15,25 @@
   background-color: #fff;
   margin-top: 8em;
   border-radius: 1.5em;
+  animation-name: scrolling;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
+
+@keyframes scrolling {
+  0% {
+    margin-top: 8em;
+    background-color: #fff;
+  }
+  35% {
+    background-color: #fff;
+  }
+
+  100% {
+    margin-top: 24em;
+    background-color: #fff0;
+  }
+}
+
+/* opacity: 1; to opacity: 0; is also a valid choice
+and a shorter one! */

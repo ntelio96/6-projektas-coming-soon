@@ -23,6 +23,10 @@
   border-radius: 0.2em;
   background-color: transparent;
 }
+section .form > input {
+  color: #fff;
+}
+
 /* .form > input:last-child {
   margin-bottom: 0;
 }

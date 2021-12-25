@@ -99,6 +99,8 @@ eg. bootstrap*/
 footer.container {
   padding-top: 0;
   text-align: center;
+  color: #fff8;
+  font-size: 17px;
 }
 .socials {
   padding: 15px 0;
@@ -126,4 +128,39 @@ footer .logo {
   object-fit: contain;
   object-position: top;
   margin: 50px 0;
+}
+
+footer .trio {
+  display: inline-block;
+}
+
+footer .trio > p {
+  float: left;
+  padding: 0 10px;
+  position: relative;
+}
+
+footer .trio > p::before {
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: 75%;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(-50%, -50%);
+}
+
+footer .trio > p:first-child::before {
+  display: none;
+}
+
+footer .link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.dollar::before {
+  content: "$";
 }

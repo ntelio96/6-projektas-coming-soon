@@ -100,9 +100,10 @@ footer.container {
   padding-top: 0;
   text-align: center;
 }
-.socials {
+.social {
   padding: 15px 0;
   border-bottom: 2px solid #fff;
+  position: relative;
 }
 .social > .fa {
   font-size: 24px;

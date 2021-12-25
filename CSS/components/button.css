@@ -1,11 +1,16 @@
 .button {
   display: inline-block;
-  padding: 0.5em 1.5em;
+  padding: 0.8em 1em;
+  line-height: 1em;
+  text-decoration: none;
   background-color: var(--secondary-color);
+  text-align: center;
   color: #fff;
-  border-radius: 0.25em;
+  border: none;
+  border-radius: 0.1em;
   font-size: 14px;
   font-family: cursive;
+  cursor: pointer;
 }
 
 .button + .button {
@@ -15,13 +20,22 @@
 .button.button-round {
   border-radius: 1.3em;
 }
-.button.buttom-round.button-icon {
+.button.buttom-round.fa {
   width: 1.3em;
   height: 1.3em;
-  margin-top: -0.05em;
-  font-size: 40px;
-  line-height: 1.2;
+  margin-top: -1em;
+  font-size: 36px;
   padding: 0;
+  line-height: 1.3em;
+}
+
+.back-to-top {
+  /* position: fixed;
+  bottom: 40px;
+  right: 40px; */
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .button:hover {

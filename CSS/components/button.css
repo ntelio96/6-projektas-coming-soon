@@ -11,6 +11,7 @@
   font-size: 14px;
   font-family: cursive;
   cursor: pointer;
+  box-shadow: 0 2px 8px 1px #0005;
 }
 
 .button + .button {
@@ -20,10 +21,10 @@
 .button.button-round {
   border-radius: 1.3em;
 }
-.button.buttom-round.fa {
+.button.buttom-round.button-icon {
   width: 1.3em;
   height: 1.3em;
-  margin-top: -1em;
+  margin-top: -0.05em;
   font-size: 36px;
   padding: 0;
   line-height: 1.3em;
@@ -34,11 +35,16 @@
   bottom: 40px;
   right: 40px; */
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -0.8em;
+  right: -0.4em;
 }
 
 .button:hover {
   background-color: orange;
   cursor: pointer;
+}
+@media (max-width: 700px) {
+  .back-to-top {
+    display: none;
+  }
 }
